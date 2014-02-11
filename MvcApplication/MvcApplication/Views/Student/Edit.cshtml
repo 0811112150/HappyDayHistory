@@ -1,0 +1,37 @@
+﻿@model Study.DomainModel.Student
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@Html.BeginForm(){
+	<div>
+		@Html.HiddenFor(model => model.StudentID)
+		@Html.LabelFor(model=>model.LastName)
+	</div>
+	<div>
+		@Html.EditorFor(model=>model.LastName)
+		@Html.ValidationMessageFor(model=>model.LastName)
+	</div>
+	<div>
+		@Html.LabelFor(model=>model.FirstMidName)
+	</div>
+	<div>
+		@Html.EditorFor(model => model.FirstMidName)
+		@Html.ValidationMessageFor(model => model.FirstMidName)
+	</div>
+	<div>
+		@Html.LabelFor(model=>model.EnrollmentDate)
+	</div>
+	<div>
+		@Html.EditorFor(model => model.EnrollmentDate)
+		@Html.ValidationMessageFor(model => model.EnrollmentDate)
+	</div>
+	<p>
+		<input type="submit" value="修改" />
+	</p>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

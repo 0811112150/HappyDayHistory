@@ -1,0 +1,109 @@
+﻿@model Study.ViewModel.TeacherIndexDate
+@{
+	ViewBag.Title = "Teacher";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+	Teacher</h2>
+<p>
+	@Html.ActionLink("Create Naw", "Creat")
+</p>
+<table>
+	<tr>
+		<th>
+		</th>
+		<th>
+			Last Name
+		</th>
+		<th>
+			First Name
+		</th>
+		<th>
+			Hire Date
+		</th>
+		<th>
+			Office
+		</th>
+		<th>
+			Courses
+		</th>
+	</tr>
+	@foreach (var item in Model.Teachers) { 
+		<tr>
+			<td>
+				@Html.ActionLink("Select", "Index", new { id = item.TeacherID }) |
+				@Html.ActionLink("Edit", "Edit", new { id = item.TeacherID }) |
+				@Html.ActionLink("Details", "Details", new { id = item.TeacherID }) |
+				@Html.ActionLink("Delete", "Delete", new { id = item.TeacherID })
+			</td>
+			<td>
+				@item.LastName
+			</td>
+			<td>
+				@item.FirstMidName
+			</td>
+			<td>
+				@string.Format("{0:d}", item.HireDate)
+			</td>
+			<td>
+				@if (item.OfficeAssignment != null) { 
+					@item.OfficeAssignment.Location
+	}
+			</td>
+			<td>
+				@foreach (var course in item.Courses) { 
+					@course.CourseID @:&nbsp; @course.Title <br />
+				}
+			</td>
+		</tr>	
+ }
+</table>
+@if (Model.Courses != null) { 
+	 <h3>Courses Taught by Selected Instructor</h3> 
+<table>
+	<tr>
+		<th></th> 
+        <th>ID</th> 
+        <th>Title</th> 
+        <th>Department</th> 
+	</tr>
+	@foreach (var item in Model.Courses) {
+	<tr>
+		<td> 
+            @Html.ActionLink("Select", "Index", new { courseID = item.CourseID }) 
+        </td> 
+		 <td> 
+            @item.CourseID 
+        </td> 
+        <td> 
+            @item.Title 
+        </td> 
+        <td> 
+            @item.Department.Name 
+        </td> 
+	</tr>
+	}
+</table>
+}
+@if (Model.Enrollments != null) 
+{ 
+    <h3> 
+        Students Enrolled in Selected Course</h3> 
+    <table> 
+        <tr> 
+            <th>Name</th> 
+            <th>Grade</th> 
+        </tr> 
+        @foreach (var item in Model.Enrollments) 
+        { 
+            <tr> 
+                <td> 
+                    @item.Student.FullName 
+                </td> 
+                <td> 
+                    @item.Grade 
+                </td> 
+            </tr> 
+        } 
+    </table> 
+}

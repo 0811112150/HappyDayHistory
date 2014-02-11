@@ -1,0 +1,33 @@
+﻿<Window x:Class="SocketCodeStudy.TCPDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="424" Width="525">
+	<Grid Margin="0,0,0,-1">
+		<Label Content="IP地址" HorizontalAlignment="Left" Margin="88,34,0,0" VerticalAlignment="Top"/>
+		<Label Content="端口号" HorizontalAlignment="Left" Margin="320,34,0,0" VerticalAlignment="Top"/>
+		<TextBox HorizontalAlignment="Left" Height="23" Margin="144,34,0,0" TextWrapping="Wrap" Name="txtIPAddress"  Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.183,0.478"/>
+		<TextBox HorizontalAlignment="Left" Height="23" Margin="371,34,0,0" TextWrapping="Wrap" Name="txtPort"  Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.183,0.478"/>
+		<Button Content="开始监听" Name="btnStartListen"  HorizontalAlignment="Left" Margin="144,78,0,0" VerticalAlignment="Top" Width="75" Click="btnStartListen_Click"/>
+		<Button Content="停止监听" x:Name="btnStopListen"  HorizontalAlignment="Left" Margin="291,78,0,0" VerticalAlignment="Top" Width="75" Click="btnStopListen_Click"/>
+		<Button Content="清空消息" x:Name="btnClearContent"  HorizontalAlignment="Left" Margin="320,246,0,0" VerticalAlignment="Top" Width="75" Click="btnClearContent_Click"/>
+		<Button Content="接收" x:Name="btnAccept"  HorizontalAlignment="Left" Margin="416,246,0,0" VerticalAlignment="Top" Width="75" Click="btnAccept_Click"/>
+		<Button Content="断开连接" x:Name="btnStopConnect"  HorizontalAlignment="Left" Margin="320,363,0,0" VerticalAlignment="Top" Width="75" Click="btnStopConnect_Click"/>
+		<Button Content="发送" x:Name="btnSendMessage"  HorizontalAlignment="Left" Margin="416,363,0,0" VerticalAlignment="Top" Width="75" Click="btnSendMessage_Click"/>
+		<RichTextBox Name="richTxtMessageList"  HorizontalAlignment="Left" Height="100" Margin="41,114,0,0" VerticalAlignment="Top" Width="450">
+			<FlowDocument>
+				<Paragraph>
+					<Run Text=""/>
+				</Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+		<RichTextBox Name="richTxtMessage"  HorizontalAlignment="Left" Height="61" Margin="41,286,0,0" VerticalAlignment="Top" Width="450">
+			<FlowDocument>
+				<Paragraph>
+					<Run Text=""/>
+				</Paragraph>
+			</FlowDocument>
+		</RichTextBox>
+		<Label Content="Label" Name="lblStatue"  HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Top" Width="330"/>
+
+	</Grid>
+</Window>

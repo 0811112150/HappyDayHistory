@@ -1,0 +1,69 @@
+﻿<style>
+    .tableClass > div
+    {
+        width: 80%;
+        height: 100px;
+        border: 2px solid gray;
+        overflow: auto;
+        padding-left: 10px;
+    }
+</style>
+<div class="tableClass">
+    <div id="weather">
+        <input type="button" value="获取天气" name="btnGetWeather" id="btnGetWeather" />
+        <div id='weatherInfo'>
+        </div>
+    </div>
+    <div id='city'>
+        <input type="button" value="获取城市信息" name="btnGetCity" id="btnGetCity" />
+        <div id='cityInfo'>
+        </div>
+    </div>
+    <div>
+        <span>资源URL:</span>
+        <input style="display: block; width: 90%" type="text" id="resourceUrl" />
+        <select id='dataType'>
+            <option value='file'>文件</option>
+            <option value='string'>字符串</option>
+        </select>
+        <input type="button" value="请求数据" id="btnGetOtherContent" />
+        <div id='otherWebContent'>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        GetWeather();
+        GetCityInfo();
+        GetOtherContent();
+    })
+
+    function GetWeather() {
+        $('#btnGetWeather').click(function () {
+            $.post('@(Url.Action("GetWeather", "Weather"))', {}, function (data) {
+                $('#weatherInfo').html('<span>' + data + '<span>');
+            });
+        });
+    }
+    function GetCityInfo() {
+        $('#btnGetCity').click(function () {
+            $.getScript('http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js', function () {
+                var cityInfo = remote_ip_info;
+                var infoStr = '';
+                for (item in cityInfo) {
+                    infoStr = String.format('{0}\n{1}={2}', infoStr, item, cityInfo[item]);
+                }
+                $("#cityInfo").html('<span>' + infoStr + '<span>');
+            })
+        })
+    }
+
+    function GetOtherContent() {
+        $('#btnGetOtherContent').click(function () {
+//            document.execCommand('SaveAs');
+            $.post('@(Url.Action("GetMvcActionResult", "Weather"))', { resourceUrl: $('#resourceUrl').val(), dataType: $('#dataType').val() }, function (data) {
+                $('#otherWebContent').html('<span>' + data + '<span>');
+            })
+        });
+    }
+</script>

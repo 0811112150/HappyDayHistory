@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Source", "Source", "{624BE5C3-7A1A-4F30-A7AB-27F2B6F3EC92}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{681EDC11-BB9F-445B-8515-86D7353CC2AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Interface", "Source\Infrastructure\Infrastructure.Interface\Infrastructure.Interface.csproj", "{8E0B4863-AE5C-4216-A7CE-8CD85603AE9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Library", "Source\Infrastructure\Infrastructure.Library\Infrastructure.Library.csproj", "{DB60604E-FD4A-4A5F-898B-FC20AF2A2192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Module", "Source\Infrastructure\Infrastructure.Module\Infrastructure.Module.csproj", "{C51D41D8-201A-48D8-B99B-F63F97C384E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shell", "Source\Infrastructure\Shell\Shell.csproj", "{5ED85070-5FE8-48C9-B996-336B5AE930AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Layout", "Source\Infrastructure\Infrastructure.Layout\Infrastructure.Layout.csproj", "{C7396792-DE30-4A6E-9CB7-FE7E6DC67E37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E0B4863-AE5C-4216-A7CE-8CD85603AE9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0B4863-AE5C-4216-A7CE-8CD85603AE9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0B4863-AE5C-4216-A7CE-8CD85603AE9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0B4863-AE5C-4216-A7CE-8CD85603AE9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB60604E-FD4A-4A5F-898B-FC20AF2A2192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB60604E-FD4A-4A5F-898B-FC20AF2A2192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB60604E-FD4A-4A5F-898B-FC20AF2A2192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB60604E-FD4A-4A5F-898B-FC20AF2A2192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C51D41D8-201A-48D8-B99B-F63F97C384E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51D41D8-201A-48D8-B99B-F63F97C384E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51D41D8-201A-48D8-B99B-F63F97C384E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51D41D8-201A-48D8-B99B-F63F97C384E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ED85070-5FE8-48C9-B996-336B5AE930AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ED85070-5FE8-48C9-B996-336B5AE930AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ED85070-5FE8-48C9-B996-336B5AE930AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ED85070-5FE8-48C9-B996-336B5AE930AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7396792-DE30-4A6E-9CB7-FE7E6DC67E37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7396792-DE30-4A6E-9CB7-FE7E6DC67E37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7396792-DE30-4A6E-9CB7-FE7E6DC67E37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7396792-DE30-4A6E-9CB7-FE7E6DC67E37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{681EDC11-BB9F-445B-8515-86D7353CC2AC} = {624BE5C3-7A1A-4F30-A7AB-27F2B6F3EC92}
+		{8E0B4863-AE5C-4216-A7CE-8CD85603AE9B} = {681EDC11-BB9F-445B-8515-86D7353CC2AC}
+		{DB60604E-FD4A-4A5F-898B-FC20AF2A2192} = {681EDC11-BB9F-445B-8515-86D7353CC2AC}
+		{C51D41D8-201A-48D8-B99B-F63F97C384E3} = {681EDC11-BB9F-445B-8515-86D7353CC2AC}
+		{5ED85070-5FE8-48C9-B996-336B5AE930AA} = {681EDC11-BB9F-445B-8515-86D7353CC2AC}
+		{C7396792-DE30-4A6E-9CB7-FE7E6DC67E37} = {681EDC11-BB9F-445B-8515-86D7353CC2AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		RootNamespace = ScsfDemo
+		CommonProjectGuid = 8e0b4863-ae5c-4216-a7ce-8cd85603ae9b
+		ShellProjectGuid = 5ed85070-5fe8-48c9-b996-336b5ae930aa
+	EndGlobalSection
+EndGlobal

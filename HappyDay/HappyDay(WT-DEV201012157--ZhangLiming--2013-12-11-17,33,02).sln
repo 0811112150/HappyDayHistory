@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpeechReadTxt", "SpeechReadTxt\SpeechReadTxt.csproj", "{F558C864-7C6E-4C66-A42B-D28A8EDB05DE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "网站登陆", "网站登陆", "{9D8AA21E-4FE4-48FF-BB22-E643066306BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyDay.WebAutoLogin", "HappyDay.WebAutoLogin\HappyDay.WebAutoLogin.csproj", "{DA17D5ED-22F1-4EA6-BD38-798F9DFCADD4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F558C864-7C6E-4C66-A42B-D28A8EDB05DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F558C864-7C6E-4C66-A42B-D28A8EDB05DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F558C864-7C6E-4C66-A42B-D28A8EDB05DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F558C864-7C6E-4C66-A42B-D28A8EDB05DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA17D5ED-22F1-4EA6-BD38-798F9DFCADD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA17D5ED-22F1-4EA6-BD38-798F9DFCADD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA17D5ED-22F1-4EA6-BD38-798F9DFCADD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA17D5ED-22F1-4EA6-BD38-798F9DFCADD4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DA17D5ED-22F1-4EA6-BD38-798F9DFCADD4} = {9D8AA21E-4FE4-48FF-BB22-E643066306BE}
+	EndGlobalSection
+EndGlobal

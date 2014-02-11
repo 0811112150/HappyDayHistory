@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88E993FF-CE4F-4945-841A-B6D92DE684D2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Human.MainWindow</RootNamespace>
+    <AssemblyName>Human.MainWindow</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Catel_logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormFolder\ContractInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\ContractInfoForm.Designer.cs">
+      <DependentUpon>ContractInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\PeopleInfoMgmtForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\PeopleInfoMgmtForm.Designer.cs">
+      <DependentUpon>PeopleInfoMgmtForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\PeoplePicInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\PeoplePicInfoForm.Designer.cs">
+      <DependentUpon>PeoplePicInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\RewardRecordInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\RewardRecordInfoForm.Designer.cs">
+      <DependentUpon>RewardRecordInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\TitleWageChangeRecordInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\TitleWageChangeRecordInfoForm.Designer.cs">
+      <DependentUpon>TitleWageChangeRecordInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\TrainingTestRecordInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\TrainingTestRecordInfoForm.Designer.cs">
+      <DependentUpon>TrainingTestRecordInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelperCommon\ControlDataCheckHelper.cs" />
+    <Compile Include="HelperCommon\MessageHelper.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resIcon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>resIcon.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting\UserInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSetting\UserInfoForm.Designer.cs">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\ContractListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\ContractListUserControl.Designer.cs">
+      <DependentUpon>ContractListUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\FamilyInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\FamilyInfoForm.Designer.cs">
+      <DependentUpon>FamilyInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\FamilyListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\FamilyListUserControl.Designer.cs">
+      <DependentUpon>FamilyListUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\InsuranceFundUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\InsuranceFundUserControl.Designer.cs">
+      <DependentUpon>InsuranceFundUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\PeopleBasicInfoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\PeopleBasicInfoUserControl.Designer.cs">
+      <DependentUpon>PeopleBasicInfoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\PeoplePicUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\PeoplePicUserControl.Designer.cs">
+      <DependentUpon>PeoplePicUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\RewardRecordListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\RewardRecordListUserControl.Designer.cs">
+      <DependentUpon>RewardRecordListUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\TitleWageChangeRecordListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\TitleWageChangeRecordListUserControl.Designer.cs">
+      <DependentUpon>TitleWageChangeRecordListUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\TrainingTestRecordListUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\TrainingTestRecordListUserControl.Designer.cs">
+      <DependentUpon>TrainingTestRecordListUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\UserInfoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\UserInfoUserControl.Designer.cs">
+      <DependentUpon>UserInfoUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder\AddPeoplerInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFolder\AddPeoplerInfoForm.Designer.cs">
+      <DependentUpon>AddPeoplerInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\PeopleListGridUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\PeopleListGridUserControl.Designer.cs">
+      <DependentUpon>PeopleListGridUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlFolder\WorkInfoUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlFolder\WorkInfoUserControl.Designer.cs">
+      <DependentUpon>WorkInfoUserControl.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormFolder\ContractInfoForm.resx">
+      <DependentUpon>ContractInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\PeopleInfoMgmtForm.resx">
+      <DependentUpon>PeopleInfoMgmtForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\PeoplePicInfoForm.resx">
+      <DependentUpon>PeoplePicInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\RewardRecordInfoForm.resx">
+      <DependentUpon>RewardRecordInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\TitleWageChangeRecordInfoForm.resx">
+      <DependentUpon>TitleWageChangeRecordInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\TrainingTestRecordInfoForm.resx">
+      <DependentUpon>TrainingTestRecordInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="resIcon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>resIcon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSetting\UserInfoForm.resx">
+      <DependentUpon>UserInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\ContractListUserControl.resx">
+      <DependentUpon>ContractListUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\FamilyInfoForm.resx">
+      <DependentUpon>FamilyInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\FamilyListUserControl.resx">
+      <DependentUpon>FamilyListUserControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\InsuranceFundUserControl.resx">
+      <DependentUpon>InsuranceFundUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\PeopleBasicInfoUserControl.resx">
+      <DependentUpon>PeopleBasicInfoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\PeoplePicUserControl.resx">
+      <DependentUpon>PeoplePicUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\RewardRecordListUserControl.resx">
+      <DependentUpon>RewardRecordListUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\TitleWageChangeRecordListUserControl.resx">
+      <DependentUpon>TitleWageChangeRecordListUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\TrainingTestRecordListUserControl.resx">
+      <DependentUpon>TrainingTestRecordListUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\UserInfoUserControl.resx">
+      <DependentUpon>UserInfoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder\AddPeoplerInfoForm.resx">
+      <DependentUpon>AddPeoplerInfoForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\PeopleListGridUserControl.resx">
+      <DependentUpon>PeopleListGridUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlFolder\WorkInfoUserControl.resx">
+      <DependentUpon>WorkInfoUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Human.BLL\Human.BLL.csproj">
+      <Project>{A10AFA25-D4D2-47A4-9299-BFFD5CCCA1C1}</Project>
+      <Name>Human.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Human.Common\Human.Common.csproj">
+      <Project>{B0B8C938-3AC6-481B-9CB1-084593EC8275}</Project>
+      <Name>Human.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Human.DomainModel\Human.DomainModel.csproj">
+      <Project>{209C91AD-403D-4C28-927E-5B87D6BCA494}</Project>
+      <Name>Human.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Human.ViewModel\Human.ViewModel.csproj">
+      <Project>{344DCFE2-2860-4841-A723-9E5727F573DD}</Project>
+      <Name>Human.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UploadFile\PeoplePic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\ATLConsumer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\ATLDLG.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\Catel_logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\DatabaseProject.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\messageboxerror.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\propertysheets.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\Provider.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\Simple.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\TextTemplate.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IconResource\tool-pro.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Catel_logo.ico" />
+    <None Include="IconResource\0258.png" />
+    <None Include="Resources\Capture.PNG" />
+    <None Include="Resources\Capture1.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
